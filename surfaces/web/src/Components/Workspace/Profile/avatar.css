@@ -1,0 +1,54 @@
+.avatar-cell {
+  text-align: right;
+}
+
+.avatar-img {
+  height: 180px;
+  width: 180px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.avatar-edit-cell {
+  text-align: left;
+}
+
+.avatar-field-row {
+
+}
+
+.avatar-edit-button {
+  margin-top: 150px;
+  margin-left: 20px;
+}
+
+.avatar-dropzone-container {
+  width: 150px;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+.avatar-dropzone-cell {
+
+}
+
+.avatar-upload-button-cell {
+
+}
+
+.avatar-upload-button {
+  margin: 10px;
+}
+
+.avatar-cancel-button-cell {
+  text-align: left;
+}
+
+.avatar-cancel-button {
+  margin: 10px;
+}
+
+.avatar-upload-thumbnail {
+  width: 55px;
+  height: 55px;
+}

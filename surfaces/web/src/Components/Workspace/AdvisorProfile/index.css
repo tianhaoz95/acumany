@@ -1,0 +1,16 @@
+.advisor-profile-information-container {
+  margin-top: 10px;
+}
+
+.advisor-introduction-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.advisor-profile-left-side {
+  margin-top: 40px;
+}
+
+.masonry-overide-onfocus-style:focus {
+  outline: none;
+}

@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Rubik Italic'), local('Rubik-Italic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWEBXyIfDnIV7nEnX660Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWBBXyIfDnIV7nElcWfwWL-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Fqj2md8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7FCimmd8WU.ttf) format('truetype');
+}
+:root {
+  font-size: 16px;
+}
+.main-content {
+  margin-top: 60px !important;
+  min-width: 600px;
+  align-self: center;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  color: #10addc;
+}
+.App {
+  background: #fff;
+  /*> div {
+    min-height: 100% !important;
+    height: auto !important;
+  }*/
+}
+.App > div > div {
+  height: 100%;
+  overflow: hidden;
+}
+.ais-InstantSearch__root {
+  height: 100% !important;
+}
+.ant-layout {
+  background: #fff !important;
+}
+.ant-radio-button-wrapper-checked {
+  color: #10addc;
+  border-color: #10addc;
+}
+.ant-select-dropdown {
+  z-index: 99999 !important;
+}
+.ant-menu-item-selected {
+  background-color: #10addc !important;
+}
+.ant-rate-disabled .ant-rate-star {
+  cursor: initial !important;
+}
+.ant-btn:hover {
+  border-color: #10addc;
+}
+.ant-btn-primary {
+  background-color: #10addc;
+  border-color: #10addc;
+}
+.ant-btn-primary:hover {
+  background-color: #10b7e9;
+  border-color: #10b7e9;
+}
+.ant-btn-tertiary {
+  background-color: #60b312 !important;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+}
+.ant-btn-tertiary:hover {
+  background-color: #6bc11a;
+  color: #fff;
+}
+.search-field {
+  width: 100%;
+}
+.search-field .ant-input-suffix {
+  right: -1px !important;
+}
+.search-field .ant-input-suffix .search-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

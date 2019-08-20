@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ais-InstantSearch__root {
+  height: 100% !important;
+}

@@ -1,0 +1,79 @@
+// main: ../../Master/styles.less
+
+.profile-hero {
+  //background: linear-gradient(165deg, #ffffff 0, #afbfcc 100%);
+  background: #f3f0f0;
+  width: 100%;
+  height: auto;
+  min-height: 320px;
+  display: flex;
+  padding-bottom: 32px;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+
+  .basic-info {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    flex: 1;
+
+    h3 {
+      font-size: 2rem;
+      line-height: 2rem;
+      color: #545454;
+      margin-bottom: 5px;
+      small {
+        font-size: .7rem;
+        font-weight: 100;
+        color: #777;
+        margin-left: .5rem;
+        .anticon {
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .ant-avatar {
+      width: 20vw;
+      height: 20vw;
+      max-width: 140px;
+      max-height: 140px;
+      border-radius: 70px;
+      margin-right: 30px;
+    }
+
+    .user-summary {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-start;
+      p {
+        margin-bottom: 5px;
+      }
+    }
+
+    .profile-actions {
+      display: flex;
+      align-items: center;
+      .ant-btn {
+        background: @main-green;
+        border: none;
+        color: #fff;
+        margin-left: 5px;
+        height: 2.5rem;
+        min-width: 120px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: .8rem;
+        transition: .5s;
+        &:hover {
+          background: #6bc11a;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.skill-card-outter-container {
+  width: 350px;
+  height: 250px;
+  overflow: auto;
+}
+
+.skill-card-edit-button-group {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.skill-card-extra-container.action {
+  padding: 5px;
+}
+
+.add-new-skill-button {
+  margin: 50px;
+}
+
+.skill-card-edit-skill-input {
+  margin: 5px;
+}
+
+.skill-card-edit-description-input {
+  margin: 5px;
+}
+
+.skill-card-edit-rate-input {
+  margin: 5px;
+}
+
+.skill-card-edit-audience-input {
+  margin: 5px;
+}
+
+.skill-card-view-audience {
+  margin-top: 25px;
+}
+
+.skill-card-view-description {
+  height: 150px;
+  overflow-y: auto;
+}

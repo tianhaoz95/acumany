@@ -1,0 +1,56 @@
+// main: ../../Master/styles.less
+
+.payments {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  min-height: calc(~"100% - 22px");
+  max-width: 680px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 11px;
+  border: 1px solid #ddd;
+
+  .credit-card-information-display {
+    .ant-btn {
+      width: 50%;
+    }
+    p {
+      margin: 15px;
+    }
+  }
+
+  .ant-card {
+    border-radius: 0;
+    margin: 10px;
+  }
+
+  .new-payment-form {
+    .ant-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .ant-form-item-control {
+      text-align: left;
+    }
+
+    .ant-form-item-label {
+      text-align: left;
+    }
+
+    .cvc {
+      max-width: 162px;
+    }
+
+    .add-card-container {
+      div {
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+  }
+}

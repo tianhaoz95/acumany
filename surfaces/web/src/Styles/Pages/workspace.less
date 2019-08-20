@@ -1,0 +1,232 @@
+// main: ../Master/styles.less
+
+// this page has separate views create separate classes for each view
+.contacts-view {
+  background: #000;
+  height: 100%;
+  overflow: hidden !important;
+
+  > .ant-row {
+    display: flex;
+    flex-grow: 1;
+
+    .ant-col-4 {
+      overflow-y: auto;
+    }
+  }
+
+  @import '../Components/Workspace/contacts-list.less';
+  @import '../Components/Workspace/contacts-content.less';
+}
+
+// sessions view
+.sessions-view {
+  background: #fff !important;
+  min-height: 100%;
+  width: 100%;
+  //max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+  //overflow: auto;
+
+  .ant-col-8 {
+    width: calc(~"33.333% - 13.33px");
+    margin-bottom: 20px;
+    &:nth-of-type(3n+2) {
+      margin: 0 20px;
+    }
+  }
+
+  .ant-row {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .ant-layout-header {
+    width: calc(~"100% + 40px");
+    padding: 0 20px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: white;
+    height: 30px;
+
+    h1 {
+      text-align: left;
+      //color: #fff;
+      color: #444;
+      margin-left: 30px;
+    }
+
+    .anticon {
+      font-size: 2rem;
+      //color: #fff;
+      color: #444;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-right: 20px;
+      display: none;
+    }
+  }
+
+  @import '../Components/Workspace/session-card.less';
+}
+
+.meeting-view {
+  height: 100%;
+  display: flex;
+
+  .ant-spin-nested-loading {
+    width: calc(~"100% - 10px");
+    > div {
+      > .ant-spin {
+          position: absolute;
+          height: 100%;
+          max-height: 320px;
+          width: 100%;
+          z-index: 4;
+          left: 0;
+        }
+      }
+  }
+
+  .meeting-container {
+    display: flex;
+    //height: calc(~"100vh - 20px");
+
+    .meeting-tools {
+      .ant-tabs {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .workspace-session-tool-container {
+          height: calc(~"100vh - 52px");
+
+          .whiteboard-svg {
+            width: 100%;
+            height: 100%;
+          }
+
+          > div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .quill-editor-container {
+            flex-grow: 1;
+          }
+        }
+
+        .ant-tabs-content {
+          flex-grow: 1;
+        }
+
+      }
+    }
+  }
+
+  .video-text-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
+
+    .session-video-container {
+      .workspace-session-local-video {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    .text-chat {
+      flex-grow: 1;
+      display: flex;
+      height: 100%;
+
+      .text-chat-outer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex-grow: 1;
+      }
+
+      .text-chat-inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-between;
+        max-height: 100%;
+        //overflow-y: auto;
+
+        .chat-box-container {
+          box-sizing: border-box;
+          flex-grow: 1;
+          height: auto;
+          border-radius: 0;
+          border-bottom: 0;
+          min-height:30vh;
+          background: #fff;
+          padding: 0 5px;
+
+          .chat-box-message {
+            padding: 0;
+            margin-top: 5px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .self-message {
+            background: #82d87d;
+            text-align: right;
+            align-self: flex-end;
+            padding: 7px;
+            margin-bottom: 3px;
+            display: inline-block;
+            border-radius: 10px;
+          }
+
+          .regular-message {
+            background: #fafafa;
+            text-align: left;
+            align-self: flex-start;
+            padding: 7px;
+            margin-bottom: 3px;
+            display: inline-block;
+            border-radius: 10px;
+          }
+
+          .message-stamp {
+            font-size: 12px;
+            margin-right: 5px;
+            text-align: right;
+          }
+        }
+        // clears margin from the bottom of text input
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}
+
+// workspace
+.workspace {
+    display: flex;
+    > .ant-layout-content {
+      flex-grow: 1;
+    }
+    @import '../Components/Workspace/payments.less';
+    @import '../Components/Workspace/workspace-main-sider.less';
+    @import '../Components/Workspace/settings.less';
+    @import '../Components/Workspace/advisor-profile-edit.less';
+    @import '../Components/Workspace/basic-profile-edit.less';
+}

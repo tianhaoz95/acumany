@@ -1,0 +1,11 @@
+matrix:
+  include:
+    - stage: web unit test
+      language: node_js
+      node_js:
+        - "10"
+      dist: xenial
+      script: |
+        cd ./surfaces/web
+        npm install
+        npm test

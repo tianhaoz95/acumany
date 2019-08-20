@@ -1,0 +1,101 @@
+// main: ../Master/styles.less
+@import "../Colors/colors.less";
+@import "../Fonts/fonts.less";
+
+:root {
+  font-size: 16px;
+}
+
+.main-content {
+  margin-top: 60px !important;
+  min-width: 600px;
+  align-self: center;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: @main-roboto;
+}
+
+a {
+  color: @main-sky-blue;
+}
+
+.App {
+  background: #fff;
+  /*> div {
+    min-height: 100% !important;
+    height: auto !important;
+  }*/
+
+  > div > div {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.ais-InstantSearch__root {
+  height: 100% !important;
+}
+
+// ant overrides, move later
+.ant-layout {
+  background: #fff !important;
+}
+
+.ant-radio-button-wrapper-checked {
+  color: @main-sky-blue;
+  border-color: @main-sky-blue;
+}
+
+.ant-select-dropdown {
+  z-index: 99999 !important;
+}
+
+.ant-menu-item-selected {
+  background-color: @main-sky-blue !important;
+}
+
+.ant-rate-disabled {
+  .ant-rate-star {
+    cursor: initial !important;
+  }
+}
+
+.ant-btn {
+  &:hover {
+    border-color: @main-sky-blue;
+  }
+}
+
+.ant-btn-primary {
+  background-color: @main-sky-blue !important;
+  border-color: @main-sky-blue;
+  &:hover {
+    background-color: @hover-sky-blue;
+    border-color: @hover-sky-blue;
+  }
+}
+
+.ant-btn-tertiary {
+  background-color: @main-green !important;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  &:hover {
+    background-color: @hover-main-green;
+    color: #fff;
+  }
+}
+
+.search-field {
+  width: 100%;
+  .ant-input-suffix {
+    right: -1px !important;
+    .search-btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}

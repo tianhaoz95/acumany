@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Rubik Italic'), local('Rubik-Italic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWEBXyIfDnIV7nEnX660Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWBBXyIfDnIV7nElcWfwWL-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Fqj2md8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7FCimmd8WU.ttf) format('truetype');
+}
+.advisor-profile-edit {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100%;
+}
+.advisor-profile-edit .advisor-profile-left-side {
+  padding: 20px;
+  margin-top: 0;
+  border-right: 1px solid #eee;
+  height: 100vh;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-cell img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-edit-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-edit-button {
+  margin-top: 1rem;
+  margin-left: 0;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-edit-active {
+  display: flex;
+  flex-grow: 1;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-edit-active .avatar-edit-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advisor-profile-edit .advisor-profile-left-side .avatar-field-row .avatar-edit-active .avatar-dropzone-container {
+  margin: 0;
+}
+.advisor-profile-edit .advisor-profile-information-container .whole-editor-toolbox-container {
+  border: 0;
+  padding-left: 1rem;
+}
+.advisor-profile-edit .advisor-profile-information-container .toolbar-menu {
+  margin-bottom: 0;
+  border-bottom-width: 1px;
+  border-color: #eee;
+}
+.advisor-profile-edit .advisor-profile-information-container .ant-tabs {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+.advisor-profile-edit .advisor-profile-information-container .ant-tabs .ant-fullcalendar-date {
+  height: 60px;
+}
+.advisor-profile-edit .advisor-profile-information-container .top-level-editor-container {
+  margin: 0;
+  font-size: 1rem;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.advisor-profile-edit .advisor-profile-information-container .top-level-editor-container > div:focus {
+  box-shadow: 0 0 5px #51cbee;
+}
+.advisor-profile-edit .advisor-profile-information-container .ant-tabs-content {
+  padding: 0;
+}
+.advisor-profile-edit .advisor-profile-information-container .ReactVirtualized__Masonry {
+  width: 100%;
+  padding: 20px;
+}

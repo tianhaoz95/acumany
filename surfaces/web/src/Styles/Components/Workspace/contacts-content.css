@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Italic'), local('Roboto-Italic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url(https://fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51TzBic6CsE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Rubik Italic'), local('Rubik-Italic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWEBXyIfDnIV7nEnX660Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url(https://fonts.gstatic.com/s/rubik/v7/iJWBBXyIfDnIV7nElcWfwWL-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Fqj2md8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7FCimmd8WU.ttf) format('truetype');
+}
+.contacts-content {
+  display: flex;
+  height: 100%;
+  background: #404040;
+}
+.contacts-content .no-message-selected {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #343434;
+}
+.contacts-content .message-trail {
+  width: 100%;
+  border: 15px solid #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+.contacts-content .message-trail .session-special-message {
+  width: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.contacts-content .message-trail .session-special-message strong {
+  color: #02CCBA;
+  font-weight: 700;
+  cursor: pointer;
+}
+.contacts-content .message-trail .session-request-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts-content .message-trail .session-request-message span {
+  flex-grow: 1;
+  text-align: left;
+  margin-bottom: .4rem;
+}
+.contacts-content .message-trail .message-items {
+  flex: 1;
+  flex-direction: column-reverse;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  overflow: auto;
+}
+.contacts-content .message-trail .message-items .single-message-container {
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  padding: 10px;
+}
+.contacts-content .message-trail .message-items .single-message-container:last-of-type {
+  border: 0;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-body > span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-body .session-details {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  margin: 5px 0;
+  background: #e8e8e8;
+  padding: 10px;
+  width: 100%;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-body .session-details .ant-btn {
+  background: #e2687a;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  margin-left: 10px;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-owner {
+  width: 70px;
+  margin-right: 20px;
+  padding-top: 3px;
+}
+.contacts-content .message-trail .message-items .single-message-container .message-owner > span {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: .7rem;
+  align-items: center;
+}
+.contacts-content .message-trail .message-items .ant-spin-container {
+  width: 100%;
+}
+.contacts-content .compose-message {
+  background: #f5f5f5;
+  padding-top: 15px;
+}
+.contacts-content .compose-message .message-invite-details {
+  display: flex;
+}
+.contacts-content .compose-message .ant-form {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-content .compose-message .ant-form .ant-form-item {
+  margin-top: 15px;
+  display: grid;
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item .ant-input-number {
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item .ant-input-number-input {
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item .ant-form-item-control {
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item .ant-form-item-control > span {
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item .ant-form-item-label {
+  text-align: left;
+}
+.contacts-content .compose-message .ant-form .ant-form-item input[type=text] {
+  width: 100%;
+}
+.contacts-content .compose-message .ant-form .ant-form-item button[type=submit] {
+  color: #fff;
+  float: right;
+  font-weight: bold;
+  background: #10addc;
+  border: 0;
+}

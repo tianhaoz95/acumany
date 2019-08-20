@@ -1,0 +1,72 @@
+// main: ../../Master/styles.less
+
+.basic-profile-edit {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100%;
+  background: #f5f5f5;
+
+  .profile-settings {
+    margin-top: 0;
+    border: 1px solid #eee;
+    height: 100vh;
+    background: #fff;
+    padding: 0 2rem;
+
+    .basic-information-text {
+      text-align: left;
+    }
+
+    .avatar-field-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .avatar-cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .avatar-edit-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .avatar-edit-button {
+        margin-top: 1rem;
+        margin-left: 0;
+      }
+
+      .avatar-edit-active {
+        display: flex;
+        flex-grow: 1;
+        .avatar-edit-actions {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .avatar-dropzone-container {
+          margin: 0;
+        }
+      }
+    }
+  } // end of edit zone
+
+  .become-advisor {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+  }
+
+}

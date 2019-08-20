@@ -1,0 +1,178 @@
+// main: ../../Master/styles.less
+@import "../../Colors/colors.less";
+@import "../../Fonts/fonts.less";
+
+.contacts-content {
+  display: flex;
+  height: 100%;
+  background: #404040;
+
+  .no-message-selected {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #343434;
+  }
+
+  .message-trail {
+    width: 100%;
+    //max-width: 792px;
+    border: 15px solid #f5f5f5;
+    display: flex;
+    flex-direction: column;
+
+    // following are styles for special message types
+
+    // AcceptanceBody and ConfirmationBody uses following
+    .session-special-message {
+      width: auto;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 700;
+      strong {
+        color: @main-torquise;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    .session-request-message {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      span {
+        flex-grow: 1;
+        text-align: left;
+        margin-bottom: .4rem;
+      }
+    }
+
+    .message-items {
+      flex: 1;
+      flex-direction: column-reverse;
+      height: 100%;
+      background: #fff;
+      border: 1px solid #f2f2f2;
+      overflow: auto;
+
+      .single-message-container {
+        border-bottom: 1px solid #f2f2f2;
+        display: flex;
+        padding: 10px;
+
+        &:last-of-type {
+          border: 0;
+        }
+
+        .message-body {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          > span {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+          }
+
+          .session-details {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            margin: 5px 0;
+            background: #e8e8e8;
+            padding: 10px;
+            width: 100%;
+
+            .ant-btn {
+              background: #e2687a;
+              color: #fff;
+              font-weight: bold;
+              border: 0;
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .message-owner {
+          width: 70px;
+          margin-right: 20px;
+          padding-top: 3px;
+          > span {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+            font-size: .7rem;
+            align-items: center;
+          }
+        }
+      } // end of single-message-container
+
+      .ant-spin-container {
+        width: 100%;
+      }
+
+    }
+  }
+
+  .compose-message {
+    background: #f5f5f5;
+    padding-top: 15px;
+
+    .message-invite-details {
+      display: flex;
+      .ant-form-item-control {
+        > span {
+          //width: 100%;
+        }
+      }
+    }
+
+    .ant-form {
+      display: flex;
+      flex-direction: column;
+      .ant-form-item {
+        margin-top: 15px;
+        display: grid;
+        width: 100%;
+
+        .ant-input-number {
+          width: 100%;
+        }
+
+        .ant-input-number-input {
+          width: 100%;
+        }
+
+        .ant-form-item-control {
+          width: 100%;
+          > span {
+            width: 100%;
+          }
+        }
+
+        .ant-form-item-label {
+          text-align: left;
+        }
+
+        input[type=text] {
+          width: 100%;
+        }
+
+        button[type=submit] {
+          color: #fff;
+          float: right;
+          font-weight: bold;
+          background: @main-sky-blue;
+          border: 0;
+        }
+      }
+    }
+  }
+}

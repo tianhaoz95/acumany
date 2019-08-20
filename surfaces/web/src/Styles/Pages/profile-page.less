@@ -1,0 +1,76 @@
+// main: ../Master/styles.less
+@import "../Colors/colors.less";
+@import "../Fonts/fonts.less";
+
+.profile-page {
+  overflow: auto !important;
+  background: #fff;
+
+  .ant-tabs-bar {
+    margin: 0;
+  }
+
+  .profile-details {
+    background: #fff !important;
+    border-radius: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -40px;
+    max-width: 980px;
+    background: transparent !important;
+    text-align: left;
+
+    h3 {
+      margin: 2rem 0 .5rem;
+    }
+
+    .single-skill {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 1rem;
+      border-left: 5px solid @main-coral;
+      margin: 1rem 0;
+      font-size: .8rem;
+
+      h3 {
+        font-size: 1rem;
+        margin-top: 0;
+      }
+    }
+
+    .profile-side {
+      padding: 5rem 1rem;
+      floaT: right;
+    }
+
+    .ant-layout-header {
+      background: transparent;
+    }
+
+    .ant-tabs {
+      font-family: @main-roboto;
+      font-size: 1rem;
+
+      .ant-fullcalendar-date {
+        height: 60px;
+      }
+    }
+
+    .whole-editor-toolbox-container {
+        font-family: @main-roboto;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        border-top: 0;
+        margin-top: 2rem;
+
+      .top-level-editor-container {
+        margin: 0;
+        height: auto;
+      }
+    }
+  }
+
+  @import '../Components/ProfilePage/profile-reviews';
+  @import '../Components/Heroes/profile-hero';
+}

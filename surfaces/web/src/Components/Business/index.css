@@ -1,0 +1,124 @@
+.business-steps-titles {
+  width: 90% !important;
+  margin-left: 5%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.business-container {
+  text-align: left;
+}
+
+.business-plans-loading-container {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.business-plans-loading {
+  margin-top: 100px;
+}
+
+.business-plans-cancel-btn {
+  margin-left: 15%;
+}
+
+.business-plan-card {
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 120px;
+  width: 70%;
+}
+
+.business-plan-card-img {
+  height: 120px;
+  width: 120px;
+}
+
+.business-plan-card-name {
+  padding-top: 30px;
+}
+
+.business-plan-card-price {
+  padding-top: 40px;
+}
+
+.business-plan-card-button {
+  margin-top: 35px;
+  margin-left: 10px;
+}
+
+.business-payment-card-form-container {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.business-basic-info-form-container {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.business-payment-status-container {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.business-payment-status-spinner {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.business-payment-buttons-container {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+}
+
+.business-preview-plan-card {
+  width: 400px;
+  height: 200px;
+}
+
+.business-preview-plan-card-img {
+  height: 200px;
+  width: 200px;
+}
+
+.business-preview-field {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.business-preview-container {
+  width: 70%;
+  margin-left: 15%;
+  text-align: left;
+}
+
+.business-preview-basic-info-field {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.business-preview-edit-btn {
+  margin-top: 100px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.business-preview-confirm-btn {
+  width: 90%;
+  margin-right: 5%;
+  height: 50px !important;
+}
+
+.business-preview-header {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.business-preview-credit-card {
+  margin-left: 20px;
+}

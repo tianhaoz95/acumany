@@ -1,0 +1,71 @@
+.main-header {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  height: 60px;
+  padding: .75rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 0 3px;
+}
+.main-header .ant-row {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-header .hide-top-search .search-field {
+  display: none !important;
+}
+.main-header .acumany-logo {
+  background-image: url('../Images/Logos/acumany-logo-small.png');
+  background-repeat: no-repeat;
+  color: #666;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 50px;
+  left: 1rem;
+  letter-spacing: 1px;
+  line-height: 50px;
+  padding-left: 60px;
+  position: absolute;
+  text-transform: uppercase;
+  width: 50px;
+}
+.main-header .ant-btn {
+  font-weight: bold;
+  margin-left: 5px;
+  border: 0;
+}
+.main-header .search-field {
+  max-width: 480px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.main-header.hide-top-search .search-field {
+  display: none !important;
+}
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+.login-form .login-form-error {
+  line-height: 1.1rem;
+}
+.login-form .login-form-button {
+  width: 100%;
+}
+.signup-form {
+  min-width: 200px;
+}
+.signup-form .login-form-button {
+  width: 100%;
+  margin-top: 0;
+}

@@ -1,0 +1,16 @@
+{
+  "short_name": "Acumany",
+  "name": "A marketplace for knowledge",
+  "icons": [
+    {
+      "src": "acumany.ico",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "gcm_sender_id": "103953800507"
+}

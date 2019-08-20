@@ -1,0 +1,64 @@
+// main: ../Master/styles.less
+@import "../Colors/colors.less";
+@import "../Fonts/fonts.less";
+
+.homepage {
+  height: auto !important;
+  overflow: auto !important;
+
+  .home-pitch {
+    font-family: @main-rubik;
+    color: #444;
+    h2 {
+      font-family: @main-rubik;
+      font-size: 2rem;
+      font-weight: 100;
+      margin: 45px 0;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: .8rem;
+    }
+    p {
+      font-size: .9rem;
+      line-height: 1.6rem;
+      color: #666;
+    }
+  }
+
+  .display-experts {
+    max-width: 1200px;
+    margin: 0 auto !important;
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 100;
+      color: #666;
+      margin: 2rem 0;
+      text-transform: uppercase;
+    }
+
+    /*&
+    this one doesn't look great with current layout but may be useful in future,
+    adds slant in the background of a div
+    ::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 300px;
+      left: 0;
+      -webkit-transform: skewY(-5deg);
+      transform: skewY(-5deg);
+      background: #fed500;
+      margin-top: -3vw;
+      top: 5vh;
+      z-index: 0;
+    }*/
+  }
+}
+
+.ant-select-dropdown-menu-item {
+  display: flex !important;
+  justify-content: space-between !important;
+}

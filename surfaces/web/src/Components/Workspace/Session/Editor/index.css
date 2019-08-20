@@ -1,0 +1,11 @@
+.quill-editor-container {
+  height: 550px;
+}
+
+.ql-container.ql-snow {
+  border: none;
+}
+
+.quill-editor-print-btn {
+  width: 100%;
+}

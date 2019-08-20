@@ -1,0 +1,26 @@
+.workspace-session-tool-container {
+  background-color: white;
+  border: solid;
+  border-width: 0px 1px 1px 1px;
+  border-color: #d9d9d9;
+  border-radius: 3px;
+}
+
+.workspace-session-tool-tabs {
+  margin: 10px;
+}
+
+.workspace-session-local-video {
+  width: 90%;
+  border-radius: 10px;
+}
+
+.videoContainer {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+.videoContainer video {
+  width: 90%;
+  border-radius: 10px;
+}
